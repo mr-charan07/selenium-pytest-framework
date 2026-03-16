@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/mr-charan07/selenium-pytest-framework.git'
+                git branch: 'main', url: 'https://github.com/mr-charan07/selenium-pytest-framework.git'
             }
         }
 
@@ -17,7 +17,7 @@ pipeline {
 
         stage('Run Tests') {
             steps {
-                bat 'pytest -v'
+                bat 'python -m pytest -v'
             }
         }
 
