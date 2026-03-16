@@ -1,0 +1,23 @@
+#helps us to reduce the code duplication 
+# make our tests more maintainable 
+# by providing reusable functions for waiting for elements and conditions in our tests.
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
+
+def wait_for_element_visible(driver, locator, timeout=10):
+    return WebDriverWait(driver, timeout).until(
+        EC.visibility_of_element_located(locator)
+    )
+
+
+def wait_for_element_clickable(driver, locator, timeout=10):
+    return WebDriverWait(driver, timeout).until(
+        EC.element_to_be_clickable(locator)
+    )
+
+
+def wait_for_url_contains(driver, text, timeout=10):
+    return WebDriverWait(driver, timeout).until(
+        EC.url_contains(text)
+    )

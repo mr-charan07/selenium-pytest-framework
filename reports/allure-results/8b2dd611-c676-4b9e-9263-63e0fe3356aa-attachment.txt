@@ -1,0 +1,5 @@
+[32mINFO    [0m automation_logger:login_page.py:28 Starting login process
+[32mINFO    [0m automation_logger:login_page.py:16 Entering email
+[32mINFO    [0m automation_logger:login_page.py:20 Entering password
+[32mINFO    [0m automation_logger:login_page.py:24 Clicking login button
+[32mINFO    [0m automation_logger:login_page.py:32 Login action completed
