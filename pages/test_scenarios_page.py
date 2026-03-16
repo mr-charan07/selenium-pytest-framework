@@ -3,7 +3,7 @@ from pages.base_page import BasePage
 from utils.wait_utils import wait_for_element_clickable, wait_for_element_visible
 
 
-class TestScenariosPage(BasePage):
+class ScenariosPage(BasePage):
 
     # -------- Alerts --------
 

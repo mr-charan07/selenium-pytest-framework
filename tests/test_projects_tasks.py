@@ -21,15 +21,14 @@ def test_task_status_update(driver):
 
     assert tasks_page.is_tasks_table_visible()
 
-    # open blocked task
+    # open blocked task edit
     tasks_page.open_blocked_task_edit()
 
-    # change status → done
+    # update status → done
     tasks_page.update_status_to_done()
 
-    # verify status updated
+    # verify task status
     assert tasks_page.is_task_marked_done()
-
 
 # Test: Verify user can create a new task
 def test_create_task(driver):
